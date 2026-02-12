@@ -33,6 +33,7 @@
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-storage-compat.js"></script>
     
     <style>
+        /* আপনার পূর্বের সকল CSS ঠিক থাকবে */
         :root {
             --primary-color: #3498db;
             --secondary-color: #2c3e50;
@@ -54,6 +55,9 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
+        /* আপনার পূর্বের সকল CSS স্টাইল এখানে থাকবে - আমি স্পেস বাঁচাতে পুরো CSS কপি করছি না */
+        /* আপনি আপনার পূর্বের CSS এখানে কপি করে দিন */
+        
         * {
             margin: 0;
             padding: 0;
@@ -69,7 +73,6 @@
             line-height: 1.6;
         }
         
-        /* App Container */
         .app-container {
             max-width: 1400px;
             margin: 20px auto;
@@ -97,7 +100,6 @@
             100% { transform: scale(1); }
         }
         
-        /* Header */
         .app-header {
             background: var(--gradient-primary);
             color: white;
@@ -196,7 +198,6 @@
             margin-top: 5px;
         }
         
-        /* Auth Container */
         .auth-container {
             padding: 50px 30px;
             display: block;
@@ -209,7 +210,6 @@
             background: #f8fafc;
         }
         
-        /* Auth Form */
         .auth-form {
             max-width: 500px;
             margin: 0 auto;
@@ -261,7 +261,6 @@
             display: block;
         }
         
-        /* Form Elements */
         .form-group {
             margin-bottom: 25px;
             position: relative;
@@ -346,7 +345,6 @@
         .strength-good { width: 75%; background: #3498db; }
         .strength-strong { width: 100%; background: var(--success-color); }
         
-        /* Buttons */
         .btn {
             background: var(--gradient-primary);
             color: white;
@@ -431,7 +429,6 @@
             transform: scale(1.1);
         }
         
-        /* User Info */
         .user-info {
             background: white;
             padding: 25px;
@@ -520,7 +517,6 @@
             margin-left: 10px;
         }
         
-        /* Tabs */
         .tabs {
             display: flex;
             border-bottom: 2px solid #eef2f7;
@@ -579,7 +575,6 @@
             display: block;
         }
         
-        /* Class Grid */
         .class-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -651,7 +646,6 @@
             gap: 5px;
         }
         
-        /* Material Items */
         .material-item {
             background: white;
             border-radius: var(--card-radius);
@@ -748,7 +742,6 @@
             border: 1px solid #e2e8f0;
         }
         
-        /* File Actions */
         .file-actions {
             display: flex;
             gap: 12px;
@@ -819,7 +812,6 @@
             box-shadow: 0 6px 15px rgba(155, 89, 182, 0.3);
         }
         
-        /* File Type Badges */
         .file-type-badge {
             display: inline-flex;
             align-items: center;
@@ -838,7 +830,6 @@
         .file-type-zip { background: #fff3e0; color: #f57c00; border: 1px solid #ffe0b2; }
         .file-type-other { background: #f5f5f5; color: #616161; border: 1px solid #e0e0e0; }
         
-        /* Search */
         .search-container {
             margin-bottom: 30px;
             position: relative;
@@ -897,7 +888,6 @@
             outline: none;
         }
         
-        /* Loading */
         .loading {
             text-align: center;
             padding: 60px 20px;
@@ -919,7 +909,6 @@
             100% { transform: rotate(360deg); }
         }
         
-        /* Empty State */
         .empty-state {
             text-align: center;
             padding: 60px 20px;
@@ -936,7 +925,6 @@
             opacity: 0.3;
         }
         
-        /* Back Button */
         .back-btn {
             background: #718096;
             color: white;
@@ -960,7 +948,6 @@
             box-shadow: 0 6px 15px rgba(113, 128, 150, 0.3);
         }
         
-        /* Subject Cards */
         .subject-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -1027,7 +1014,6 @@
             border: 1px solid #e2e8f0;
         }
         
-        /* File Preview */
         .file-preview {
             max-width: 200px;
             max-height: 200px;
@@ -1037,7 +1023,6 @@
             border: 2px solid #e2e8f0;
         }
         
-        /* PWA Install Button */
         .pwa-section {
             text-align: center;
             margin-top: 40px;
@@ -1071,7 +1056,6 @@
             box-shadow: 0 10px 25px rgba(155, 89, 182, 0.35);
         }
         
-        /* Status Messages */
         .status-message {
             position: fixed;
             top: 25px;
@@ -1114,7 +1098,6 @@
             font-size: 1.8rem;
         }
         
-        /* File Section */
         .file-section {
             background: white;
             padding: 30px;
@@ -1147,14 +1130,12 @@
             gap: 12px;
         }
         
-        /* Two Column Layout */
         .two-column {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
         }
         
-        /* Dark Mode Toggle */
         .dark-mode-toggle {
             position: fixed;
             bottom: 25px;
@@ -1179,7 +1160,6 @@
             transform: scale(1.1) rotate(30deg);
         }
         
-        /* Progress Bar */
         .progress-bar {
             width: 100%;
             height: 6px;
@@ -1196,7 +1176,6 @@
             transition: width 0.3s ease;
         }
         
-        /* Modal */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -1223,7 +1202,6 @@
             animation: fadeIn 0.3s ease;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .two-column {
                 grid-template-columns: 1fr;
@@ -1303,7 +1281,6 @@
             }
         }
         
-        /* Touch Optimizations */
         @media (hover: none) and (pointer: coarse) {
             .btn, .view-btn, .download-btn, .open-btn, .logout-btn {
                 min-height: 50px;
@@ -1320,7 +1297,6 @@
             }
         }
         
-        /* PWA Status */
         .pwa-status {
             position: fixed;
             top: 20px;
@@ -1338,7 +1314,6 @@
             border: 2px solid white;
         }
         
-        /* Quick Actions */
         .quick-actions {
             display: flex;
             gap: 15px;
@@ -1371,7 +1346,6 @@
             color: var(--primary-color);
         }
         
-        /* Rating */
         .rating {
             display: flex;
             gap: 5px;
@@ -1383,7 +1357,6 @@
             font-size: 1.2rem;
         }
         
-        /* Featured Content */
         .featured-content {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -1419,7 +1392,6 @@
             border: 2px solid rgba(255,255,255,0.3);
         }
         
-        /* Tooltip */
         .tooltip {
             position: relative;
             display: inline-block;
@@ -1460,7 +1432,6 @@
             opacity: 1;
         }
         
-        /* Breadcrumb */
         .breadcrumb {
             display: flex;
             align-items: center;
@@ -1624,7 +1595,7 @@
                     </div>
                 </div>
                 
-                <!-- Register Form -->
+                <!-- Register Form - সম্পূর্ণ ঠিক করা হয়েছে -->
                 <div id="registerForm" class="auth-form-section">
                     <div class="form-group">
                         <label>
@@ -1774,27 +1745,27 @@
             
             <!-- Tabs -->
             <div class="tabs">
-                <button class="tab active" onclick="switchTab('contentTab')">
+                <button class="tab active" onclick="switchTab('contentTab', event)">
                     <span>📚</span>
                     কন্টেন্ট
                     <span class="tab-badge" id="contentBadge">0</span>
                 </button>
-                <button class="tab" onclick="switchTab('fileTab')">
+                <button class="tab" onclick="switchTab('fileTab', event)">
                     <span>📁</span>
                     ফাইল
                     <span class="tab-badge" id="fileBadge">0</span>
                 </button>
-                <button class="tab" onclick="switchTab('bookTab')">
+                <button class="tab" onclick="switchTab('bookTab', event)">
                     <span>📖</span>
                     বই ও গাইড
                     <span class="tab-badge" id="bookBadge">0</span>
                 </button>
-                <button class="tab" onclick="switchTab('videoTab')">
+                <button class="tab" onclick="switchTab('videoTab', event)">
                     <span>🎬</span>
                     ভিডিও
                     <span class="tab-badge" id="videoBadge">0</span>
                 </button>
-                <button class="tab" onclick="switchTab('mcqTab')">
+                <button class="tab" onclick="switchTab('mcqTab', event)">
                     <span>🔠</span>
                     MCQ প্রশ্ন
                     <span class="tab-badge" id="mcqBadge">0</span>
@@ -2054,7 +2025,7 @@
 
     <script>
         // =================== APP CONFIGURATION ===================
-        const APP_VERSION = '5.0.0';
+        const APP_VERSION = '5.0.1'; // ভার্সন আপডেট
         const APP_NAME = 'শিক্ষা সহায়িকা';
         
         // =================== FIREBASE CONFIGURATION ===================
@@ -2087,17 +2058,30 @@
         // =================== INITIALIZE FIREBASE ===================
         function initializeFirebase() {
             try {
-                firebase.initializeApp(firebaseConfig);
+                // চেক করুন Firebase ইতিমধ্যে initialized কিনা
+                if (!firebase.apps.length) {
+                    firebase.initializeApp(firebaseConfig);
+                }
                 db = firebase.database();
                 auth = firebase.auth();
                 storage = firebase.storage();
                 console.log("✅ Firebase initialized successfully");
+                
+                // Database connection test
+                db.ref('.info/connected').on('value', (snap) => {
+                    if (snap.val() === true) {
+                        console.log("✅ Database connected");
+                    } else {
+                        console.log("❌ Database disconnected");
+                    }
+                });
+                
                 setupAuth();
                 setupServiceWorker();
                 loadAppStats();
             } catch (error) {
                 console.error("❌ Firebase initialization error:", error);
-                showStatus("Firebase সংযোগ ব্যর্থ", "error");
+                showStatus("Firebase সংযোগ ব্যর্থ: " + error.message, "error");
             }
         }
         
@@ -2110,7 +2094,7 @@
                 const count = snapshot.exists() ? snapshot.numChildren() : 0;
                 document.getElementById('totalFiles').textContent = count;
                 document.getElementById('fileBadge').textContent = count;
-            });
+            }).catch(error => console.error("Files count error:", error));
             
             // Load total books count
             db.ref('materials').orderByChild('type').once('value').then(snapshot => {
@@ -2132,13 +2116,13 @@
                 document.getElementById('totalVideos').textContent = videoCount;
                 document.getElementById('videoBadge').textContent = videoCount;
                 document.getElementById('mcqBadge').textContent = mcqCount;
-            });
+            }).catch(error => console.error("Books count error:", error));
             
-            // Load active users count (simplified)
+            // Load active users count
             db.ref('users').once('value').then(snapshot => {
                 const count = snapshot.exists() ? snapshot.numChildren() : 0;
                 document.getElementById('activeUsers').textContent = count;
-            });
+            }).catch(error => console.error("Users count error:", error));
         }
         
         // =================== DARK MODE ===================
@@ -2377,14 +2361,20 @@
             const username = document.getElementById('registerUsername').value.trim();
             const helper = document.getElementById('usernameHelper');
             
+            if (!username) {
+                helper.innerHTML = '<span>❌</span> ইউজারনেম প্রয়োজন';
+                helper.className = 'form-helper invalid';
+                return false;
+            }
+            
             if (username.length < 3) {
                 helper.innerHTML = '<span>❌</span> কমপক্ষে ৩ অক্ষর প্রয়োজন';
                 helper.className = 'form-helper invalid';
                 return false;
             }
             
-            if (!/^[a-zA-Z0-9]+$/.test(username)) {
-                helper.innerHTML = '<span>❌</span> শুধু অক্ষর ও সংখ্যা অনুমোদিত';
+            if (!/^[a-zA-Z0-9_]+$/.test(username)) {
+                helper.innerHTML = '<span>❌</span> শুধু অক্ষর, সংখ্যা ও আন্ডারস্কোর অনুমোদিত';
                 helper.className = 'form-helper invalid';
                 return false;
             }
@@ -2398,6 +2388,12 @@
             const email = document.getElementById('registerEmail').value.trim();
             const helper = document.getElementById('emailHelper');
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!email) {
+                helper.innerHTML = '<span>❌</span> ইমেইল প্রয়োজন';
+                helper.className = 'form-helper invalid';
+                return false;
+            }
             
             if (!emailRegex.test(email)) {
                 helper.innerHTML = '<span>❌</span> বৈধ ইমেইল দিন';
@@ -2423,7 +2419,11 @@
             if (/[^A-Za-z0-9]/.test(password)) strength++;
             
             strengthBar.className = 'strength-meter';
-            if (strength <= 1) {
+            if (!password) {
+                strengthBar.style.width = '0%';
+                helper.innerHTML = '<span>ℹ️</span> পাসওয়ার্ড শক্তি: -';
+                helper.className = 'form-helper';
+            } else if (strength <= 1) {
                 strengthBar.classList.add('strength-weak');
                 helper.innerHTML = '<span>❌</span> পাসওয়ার্ড শক্তি: দুর্বল';
                 helper.className = 'form-helper invalid';
@@ -2441,7 +2441,7 @@
                 helper.className = 'form-helper valid';
             }
             
-            return strength >= 3;
+            return strength >= 2;
         }
         
         function confirmPassword() {
@@ -2449,7 +2449,7 @@
             const confirmPassword = document.getElementById('registerConfirmPassword').value;
             const helper = document.getElementById('confirmPasswordHelper');
             
-            if (!confirmPassword) {
+            if (!password || !confirmPassword) {
                 helper.innerHTML = '<span>ℹ️</span> পাসওয়ার্ড মিলছে কিনা নিশ্চিত করুন';
                 helper.className = 'form-helper';
                 return false;
@@ -2466,7 +2466,7 @@
             return true;
         }
         
-        // =================== AUTHENTICATION ===================
+        // =================== AUTHENTICATION - সম্পূর্ণ ঠিক করা হয়েছে ===================
         function setupAuth() {
             auth.onAuthStateChanged((user) => {
                 if (user) {
@@ -2488,7 +2488,7 @@
                     if (db) {
                         db.ref('users/' + user.uid).update({
                             lastLogin: firebase.database.ServerValue.TIMESTAMP
-                        });
+                        }).catch(error => console.error("Last login update error:", error));
                     }
                 } else {
                     currentUser = null;
@@ -2523,11 +2523,18 @@
                         } else if (userData.downloads > 50) {
                             userBadge.textContent = 'অ্যাক্টিভ ব্যবহারকারী';
                             userBadge.style.background = 'var(--gradient-success)';
+                        } else {
+                            userBadge.textContent = 'সাধারণ ব্যবহারকারী';
+                            userBadge.style.background = 'var(--gradient-success)';
                         }
                     } else {
                         nameDisplay.textContent = user.email.split('@')[0];
                         avatar.textContent = user.email.charAt(0).toUpperCase();
                     }
+                }).catch(error => {
+                    console.error("User data load error:", error);
+                    nameDisplay.textContent = user.email.split('@')[0];
+                    avatar.textContent = user.email.charAt(0).toUpperCase();
                 });
             } else {
                 nameDisplay.textContent = user.email.split('@')[0];
@@ -2591,6 +2598,11 @@
             }
         }
         
+        // █████████████████████████████████████████████████████████████████████
+        // 🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+        // সবচেয়ে গুরুত্বপূর্ণ অংশ - রেজিস্ট্রেশন ফাংশন সম্পূর্ণ ঠিক করা হয়েছে
+        // █████████████████████████████████████████████████████████████████████
+        
         function registerUser() {
             const username = document.getElementById('registerUsername').value.trim();
             const email = document.getElementById('registerEmail').value.trim();
@@ -2599,19 +2611,45 @@
             const agreeTerms = document.getElementById('agreeTerms').checked;
             const registerBtn = document.getElementById('registerBtn');
             
-            // Validate all fields
-            if (!validateUsername() || !validateEmail() || !checkPasswordStrength() || !confirmPassword()) {
-                showAuthMessage("সব তথ্য সঠিকভাবে পূরণ করুন", "error");
+            // ফাঁকা ফিল্ড চেক করুন
+            if (!username) {
+                showAuthMessage("ইউজারনেম দিন", "error");
+                document.getElementById('registerUsername').focus();
                 return;
             }
             
-            if (!agreeTerms) {
-                showAuthMessage("সেবা শর্তাবলী মেনে চলতে হবে", "error");
+            if (!email) {
+                showAuthMessage("ইমেইল দিন", "error");
+                document.getElementById('registerEmail').focus();
                 return;
             }
             
-            if (!username || !email || !password || !confirmPassword) {
-                showAuthMessage("সব ফিল্ড পূরণ করুন", "error");
+            if (!password) {
+                showAuthMessage("পাসওয়ার্ড দিন", "error");
+                document.getElementById('registerPassword').focus();
+                return;
+            }
+            
+            if (!confirmPassword) {
+                showAuthMessage("পাসওয়ার্ড নিশ্চিত করুন", "error");
+                document.getElementById('registerConfirmPassword').focus();
+                return;
+            }
+            
+            // ভ্যালিডেশন
+            if (username.length < 3) {
+                showAuthMessage("ইউজারনেম কমপক্ষে ৩ অক্ষর হতে হবে", "error");
+                return;
+            }
+            
+            if (!/^[a-zA-Z0-9_]+$/.test(username)) {
+                showAuthMessage("ইউজারনেমে শুধু অক্ষর, সংখ্যা ও আন্ডারস্কোর থাকতে পারে", "error");
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showAuthMessage("বৈধ ইমেইল দিন", "error");
                 return;
             }
             
@@ -2625,22 +2663,32 @@
                 return;
             }
             
-            if (username.length < 3) {
-                showAuthMessage("ইউজারনেম কমপক্ষে ৩ অক্ষর হতে হবে", "error");
+            if (!agreeTerms) {
+                showAuthMessage("সেবা শর্তাবলী মেনে চলতে হবে", "error");
                 return;
             }
             
             registerBtn.disabled = true;
             registerBtn.innerHTML = '<span>⏳</span> রেজিস্টার হচ্ছে...';
             
-            // Check if username already exists
+            // ফায়ারবেস ডাটাবেস চেক করুন
+            if (!db) {
+                showAuthMessage("ডাটাবেজ সংযোগ নেই। আবার চেষ্টা করুন।", "error");
+                registerBtn.disabled = false;
+                registerBtn.innerHTML = '<span>✨</span> রেজিস্টার করুন';
+                return;
+            }
+            
+            console.log("Registration started for:", username, email);
+            
+            // ধাপ ১: ইউজারনেম চেক করুন
             db.ref('users').orderByChild('username').equalTo(username).once('value')
                 .then((snapshot) => {
                     if (snapshot.exists()) {
                         throw new Error('এই ইউজারনেম ইতিমধ্যে ব্যবহার করা হয়েছে');
                     }
                     
-                    // Check if email already exists
+                    // ধাপ ২: ইমেইল চেক করুন
                     return db.ref('users').orderByChild('email').equalTo(email).once('value');
                 })
                 .then((snapshot) => {
@@ -2648,45 +2696,75 @@
                         throw new Error('এই ইমেইল ইতিমধ্যে ব্যবহার করা হয়েছে');
                     }
                     
-                    // Create user with email/password
+                    // ধাপ ৩: Firebase Authentication এ ইউজার তৈরি করুন
                     return auth.createUserWithEmailAndPassword(email, password);
                 })
                 .then((userCredential) => {
-                    // Save user data
-                    return db.ref('users/' + userCredential.user.uid).set({
+                    const user = userCredential.user;
+                    console.log("User created in Auth:", user.uid);
+                    
+                    // ধাপ ৪: Realtime Database এ ইউজার ডাটা সংরক্ষণ করুন
+                    const userData = {
                         username: username,
                         email: email,
+                        uid: user.uid,
                         createdAt: firebase.database.ServerValue.TIMESTAMP,
                         role: 'user',
                         appVersion: APP_VERSION,
                         downloads: 0,
                         views: 0,
-                        lastLogin: firebase.database.ServerValue.TIMESTAMP
-                    });
+                        lastLogin: firebase.database.ServerValue.TIMESTAMP,
+                        isActive: true
+                    };
+                    
+                    return db.ref('users/' + user.uid).set(userData);
                 })
                 .then(() => {
+                    console.log("User data saved to database successfully");
+                    
                     showAuthMessage("✅ রেজিস্ট্রেশন সফল! স্বয়ংক্রিয় লগইন হয়েছে", "success");
                     registerBtn.disabled = false;
                     registerBtn.innerHTML = '<span>✨</span> রেজিস্টার করুন';
                     
-                    // Clear form
+                    // ফর্ম ক্লিয়ার করুন
                     document.getElementById('registerUsername').value = '';
                     document.getElementById('registerEmail').value = '';
                     document.getElementById('registerPassword').value = '';
                     document.getElementById('registerConfirmPassword').value = '';
                     document.getElementById('agreeTerms').checked = false;
                     
-                    // Reset validation
+                    // ভ্যালিডেশন রিসেট করুন
                     document.getElementById('usernameHelper').className = 'form-helper';
+                    document.getElementById('usernameHelper').innerHTML = '<span>ℹ️</span> কমপক্ষে ৩ অক্ষর, শুধু অক্ষর ও সংখ্যা';
                     document.getElementById('emailHelper').className = 'form-helper';
+                    document.getElementById('emailHelper').innerHTML = '<span>ℹ️</span> বৈধ ইমেইল ঠিকানা দিন';
                     document.getElementById('passwordHelper').className = 'form-helper';
+                    document.getElementById('passwordHelper').innerHTML = '<span>ℹ️</span> পাসওয়ার্ড শক্তি: দুর্বল';
                     document.getElementById('confirmPasswordHelper').className = 'form-helper';
+                    document.getElementById('confirmPasswordHelper').innerHTML = '<span>ℹ️</span> পাসওয়ার্ড মিলছে কিনা নিশ্চিত করুন';
                     document.getElementById('passwordStrength').className = 'strength-meter';
+                    
+                    // লগইন ট্যাবে নিয়ে যান
+                    showAuthForm('login');
                 })
                 .catch((error) => {
                     registerBtn.disabled = false;
                     registerBtn.innerHTML = '<span>✨</span> রেজিস্টার করুন';
-                    handleAuthError(error);
+                    
+                    console.error("Registration error:", error.code, error.message);
+                    
+                    if (error.code === 'auth/email-already-in-use') {
+                        showAuthMessage("এই ইমেইল ইতিমধ্যে ব্যবহার করা হয়েছে", "error");
+                    } else if (error.code === 'auth/weak-password') {
+                        showAuthMessage("পাসওয়ার্ড খুব দুর্বল (কমপক্ষে ৬ অক্ষর)", "error");
+                    } else if (error.code === 'auth/invalid-email') {
+                        showAuthMessage("ভুল ইমেইল ফরম্যাট", "error");
+                    } else if (error.message === 'এই ইউজারনেম ইতিমধ্যে ব্যবহার করা হয়েছে' || 
+                               error.message === 'এই ইমেইল ইতিমধ্যে ব্যবহার করা হয়েছে') {
+                        showAuthMessage(error.message, "error");
+                    } else {
+                        showAuthMessage("রেজিস্ট্রেশন ব্যর্থ: " + error.message, "error");
+                    }
                 });
         }
         
@@ -2713,6 +2791,7 @@
                     })
                     .catch((error) => {
                         console.error("Logout error:", error);
+                        showStatus("লগআউট ব্যর্থ", "error");
                     });
             }
         }
@@ -3013,6 +3092,7 @@
                     loadFeaturedContent();
                 })
                 .catch((error) => {
+                    console.error("Materials load error:", error);
                     materialsList.innerHTML = `
                         <div class="empty-state">
                             <div class="empty-state-icon">❌</div>
@@ -3040,7 +3120,7 @@
                             document.getElementById('featuredDescription').textContent = data.description || 'বিশেষ কন্টেন্ট';
                         });
                     }
-                });
+                }).catch(error => console.error("Featured content error:", error));
         }
         
         function openFeatured() {
@@ -3098,7 +3178,7 @@
                         html += `
                             <div class="material-item">
                                 <h4>
-                                    ${fileIcon} ${data.fileName || data.originalName}
+                                    ${fileIcon} ${data.fileName || data.originalName || 'ফাইলের নাম নেই'}
                                 </h4>
                                 <div style="margin-bottom: 15px;">
                                     ${fileTypeBadge}
@@ -3111,7 +3191,7 @@
                                     <span>📂 ${data.class || 'ক্লাস নেই'}</span>
                                     <span>📚 ${getSubjectName(data.subject)}</span>
                                     <span>📊 ${fileSize}</span>
-                                    <span>📅 ${data.uploadDate}</span>
+                                    <span>📅 ${data.uploadDate || new Date().toLocaleDateString()}</span>
                                     <span>👤 ${data.uploadedBy || 'অজানা'}</span>
                                 </div>
                                 <div class="file-actions">
@@ -3119,7 +3199,7 @@
                                         <span>👁️</span>
                                         দেখুন
                                     </button>
-                                    <button onclick="downloadFile('${data.url}', '${data.fileName || data.originalName}')" class="download-btn">
+                                    <button onclick="downloadFile('${data.url}', '${data.fileName || data.originalName || 'file'}')" class="download-btn">
                                         <span>⬇️</span>
                                         ডাউনলোড
                                     </button>
@@ -3133,6 +3213,7 @@
                 })
                 .catch((error) => {
                     filesLoading.style.display = 'none';
+                    console.error("Files load error:", error);
                     filesList.innerHTML = `
                         <div class="empty-state">
                             <div class="empty-state-icon">❌</div>
@@ -3158,7 +3239,8 @@
             const filteredFiles = allFiles.filter(file => 
                 (file.fileName && file.fileName.toLowerCase().includes(searchTerm)) ||
                 (file.description && file.description.toLowerCase().includes(searchTerm)) ||
-                (file.subject && file.subject.toLowerCase().includes(searchTerm))
+                (file.subject && file.subject.toLowerCase().includes(searchTerm)) ||
+                (file.class && file.class.toLowerCase().includes(searchTerm))
             );
             
             displayFilteredFiles(filteredFiles);
@@ -3187,7 +3269,7 @@
                 html += `
                     <div class="material-item">
                         <h4>
-                            ${fileIcon} ${data.fileName || data.originalName}
+                            ${fileIcon} ${data.fileName || data.originalName || 'ফাইলের নাম নেই'}
                         </h4>
                         <div style="margin-bottom: 15px;">
                             ${fileTypeBadge}
@@ -3200,14 +3282,14 @@
                             <span>📂 ${data.class || 'ক্লাস নেই'}</span>
                             <span>📚 ${getSubjectName(data.subject)}</span>
                             <span>📊 ${fileSize}</span>
-                            <span>📅 ${data.uploadDate}</span>
+                            <span>📅 ${data.uploadDate || new Date().toLocaleDateString()}</span>
                         </div>
                         <div class="file-actions">
                             <button onclick="viewFile('${data.key}')" class="view-btn">
                                 <span>👁️</span>
                                 দেখুন
                             </button>
-                            <button onclick="downloadFile('${data.url}', '${data.fileName || data.originalName}')" class="download-btn">
+                            <button onclick="downloadFile('${data.url}', '${data.fileName || data.originalName || 'file'}')" class="download-btn">
                                 <span>⬇️</span>
                                 ডাউনলোড
                             </button>
@@ -3303,13 +3385,14 @@
                                     user.views = (user.views || 0) + 1;
                                 }
                                 return user;
-                            });
+                            }).catch(error => console.error("View count update error:", error));
                         }
                     } else {
                         showStatus("ফাইল লিঙ্ক পাওয়া যায়নি", "error");
                     }
                 })
                 .catch((error) => {
+                    console.error("View file error:", error);
                     showStatus("ফাইল লোড ব্যর্থ", "error");
                 });
         }
@@ -3398,6 +3481,15 @@
                     }
                     
                     booksList.innerHTML = html;
+                }).catch(error => {
+                    console.error("Books load error:", error);
+                    booksList.innerHTML = `
+                        <div class="empty-state">
+                            <div class="empty-state-icon">❌</div>
+                            <h3>বই লোড করতে সমস্যা</h3>
+                            <p>${error.message}</p>
+                        </div>
+                    `;
                 });
         }
         
@@ -3476,6 +3568,15 @@
                     }
                     
                     videosList.innerHTML = html;
+                }).catch(error => {
+                    console.error("Videos load error:", error);
+                    videosList.innerHTML = `
+                        <div class="empty-state">
+                            <div class="empty-state-icon">❌</div>
+                            <h3>ভিডিও লোড করতে সমস্যা</h3>
+                            <p>${error.message}</p>
+                        </div>
+                    `;
                 });
         }
         
@@ -3564,6 +3665,15 @@
                     }
                     
                     mcqList.innerHTML = html;
+                }).catch(error => {
+                    console.error("MCQs load error:", error);
+                    mcqList.innerHTML = `
+                        <div class="empty-state">
+                            <div class="empty-state-icon">❌</div>
+                            <h3>MCQ লোড করতে সমস্যা</h3>
+                            <p>${error.message}</p>
+                        </div>
+                    `;
                 });
         }
         
@@ -3693,7 +3803,7 @@
                             user.downloads = (user.downloads || 0) + 1;
                         }
                         return user;
-                    });
+                    }).catch(error => console.error("Download count update error:", error));
                 }
             } else {
                 showStatus("ফাইল লিঙ্ক পাওয়া যায়নি", "error");
@@ -3725,7 +3835,7 @@
                             user.downloads = (user.downloads || 0) + 1;
                         }
                         return user;
-                    });
+                    }).catch(error => console.error("Download count update error:", error));
                 }
             } else {
                 showStatus("ডাউনলোড লিঙ্ক পাওয়া যায়নি", "error");
@@ -3787,7 +3897,7 @@
             `;
         }
         
-        function switchTab(tabName) {
+        function switchTab(tabName, event) {
             // Hide all tabs
             const tabs = document.querySelectorAll('.tab-content');
             tabs.forEach(tab => tab.classList.remove('active'));
@@ -3800,7 +3910,12 @@
             document.getElementById(tabName).classList.add('active');
             
             // Add active class to clicked button
-            event.target.classList.add('active');
+            if (event && event.target) {
+                const clickedButton = event.target.closest('.tab');
+                if (clickedButton) {
+                    clickedButton.classList.add('active');
+                }
+            }
             
             // Load data if needed
             if (tabName === 'fileTab') {
@@ -3870,7 +3985,7 @@
         
         function showAuthMessage(message, type) {
             const msgDiv = document.getElementById('authMessage');
-            msgDiv.textContent = message;
+            msgDiv.innerHTML = message;
             msgDiv.style.display = 'block';
             
             if (type === 'error') {
@@ -3881,6 +3996,10 @@
                 msgDiv.style.background = 'linear-gradient(135deg, rgba(230, 255, 230, 0.9), rgba(204, 255, 204, 0.9))';
                 msgDiv.style.color = '#2e7d32';
                 msgDiv.style.border = '2px solid #c8e6c9';
+            } else {
+                msgDiv.style.background = 'linear-gradient(135deg, rgba(255, 243, 224, 0.9), rgba(255, 224, 178, 0.9))';
+                msgDiv.style.color = '#e65100';
+                msgDiv.style.border = '2px solid #ffe0b2';
             }
             
             setTimeout(() => {
@@ -3958,39 +4077,46 @@
         
         // =================== INITIALIZATION ===================
         document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM Loaded, initializing Firebase...");
             initializeFirebase();
             
             showAuthForm('login');
             
-            const searchContent = document.getElementById('searchContent');
-            if (searchContent) {
-                searchContent.addEventListener('keypress', function(e) {
+            const searchContentInput = document.getElementById('searchContent');
+            if (searchContentInput) {
+                searchContentInput.addEventListener('keypress', function(e) {
                     if (e.key === 'Enter') {
                         searchContent();
                     }
                 });
             }
             
-            const searchFiles = document.getElementById('searchFiles');
-            if (searchFiles) {
-                searchFiles.addEventListener('keypress', function(e) {
+            const searchFilesInput = document.getElementById('searchFiles');
+            if (searchFilesInput) {
+                searchFilesInput.addEventListener('keypress', function(e) {
                     if (e.key === 'Enter') {
                         searchFiles();
                     }
                 });
             }
             
-            document.getElementById('loginPassword').addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    loginUser();
-                }
-            });
+            const loginPassword = document.getElementById('loginPassword');
+            if (loginPassword) {
+                loginPassword.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        loginUser();
+                    }
+                });
+            }
             
-            document.getElementById('registerConfirmPassword').addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    registerUser();
-                }
-            });
+            const registerConfirmPassword = document.getElementById('registerConfirmPassword');
+            if (registerConfirmPassword) {
+                registerConfirmPassword.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        registerUser();
+                    }
+                });
+            }
             
             // Check for dark mode preference
             const darkModePreference = localStorage.getItem('darkMode');
